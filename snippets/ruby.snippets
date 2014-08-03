@@ -26,8 +26,9 @@ snippet rb
 	#!/usr/bin/env ruby -wKU
 snippet beg
 	begin
-		${0}
-	rescue ${1:Exception} => ${2:e}
+		${1}
+	rescue ${2:Exception} => ${3:e}
+    ${0}
 	end
 
 snippet req require
