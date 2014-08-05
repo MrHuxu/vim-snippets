@@ -528,8 +528,17 @@ snippet dov
 	end
 snippet :
 	${1:key}: ${2:'value'}
+snippet op
+options word
+	open('${1:path/or/url/or/pipe}', '${2:w}')
 snippet ope
+options word
 	open('${1:path/or/url/or/pipe}', '${2:w}') { |${3:io}| ${0} }
+snippet oped
+options word
+  open('${1:path/or/url/or/pipe}', '${2:w}') do |${3:io}|
+    ${0}
+  end
 # path_from_here()
 snippet fpath
 	File.join(File.dirname(__FILE__), *['${1:rel path here}'])
