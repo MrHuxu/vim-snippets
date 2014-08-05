@@ -1020,6 +1020,10 @@ snippet ra
 	render action: '${0:action}'
 snippet ral
 	render action: '${1:action}', layout: '${0:layoutname}'
+snippet rd
+  redirect_to '${1:path}'
+snippet rdc
+  redirect_to '${1:Controller}#${2:action}'
 snippet rest
 	respond_to do |format|
 		format.${1:html} { ${0} }
