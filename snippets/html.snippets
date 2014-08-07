@@ -1,419 +1,570 @@
 # Some useful Unicode entities
 # Non-Breaking Space
 snippet nbs
+options word
 	&nbsp;
 # ←
 snippet left
+options word
 	&#x2190;
 # →
 snippet right
+options word
 	&#x2192;
 # ↑
 snippet up
+options word
 	&#x2191;
 # ↓
 snippet down
+options word
 	&#x2193;
 # ↩
 snippet return
+options word
 	&#x21A9;
 # ⇤
 snippet backtab
+options word
 	&#x21E4;
 # ⇥
 snippet tab
+options word
 	&#x21E5;
 # ⇧
 snippet shift
+options word
 	&#x21E7;
 # ⌃
 snippet ctrl
+options word
 	&#x2303;
 # ⌅
 snippet enter
+options word
 	&#x2305;
 # ⌘
 snippet cmd
+options word
 	&#x2318;
 # ⌥
 snippet option
+options word
 	&#x2325;
 # ⌦
 snippet delete
+options word
 	&#x2326;
 # ⌫
 snippet backspace
+options word
 	&#x232B;
 # ⎋
 snippet esc
+options word
 	&#x238B;
 # comment
 snippet //
+options word
 	<!-- ${1} -->${0}
 # Generic Doctype
 snippet doctype HTML 4.01 Strict
+options word
 	<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
 	"http://www.w3.org/TR/html4/strict.dtd">
 snippet doctype HTML 4.01 Transitional
+options word
 	<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
 	"http://www.w3.org/TR/html4/loose.dtd">
 snippet doctype HTML 5
+options word
 	<!DOCTYPE HTML>
 snippet doctype XHTML 1.0 Frameset
+options word
 	<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
 	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 snippet doctype XHTML 1.0 Strict
+options word
 	<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
 	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 snippet doctype XHTML 1.0 Transitional
+options word
 	<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
 	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 snippet doctype XHTML 1.1
+options word
 	<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
 	"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
 # HTML Doctype 4.01 Strict
 snippet docts
+options word
 	<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
 	"http://www.w3.org/TR/html4/strict.dtd">
 # HTML Doctype 4.01 Transitional
 snippet doct
+options word
 	<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
 	"http://www.w3.org/TR/html4/loose.dtd">
 # HTML Doctype 5
 snippet doct5
+options word
 	<!DOCTYPE HTML>
 # XHTML Doctype 1.0 Frameset
 snippet docxf
+options word
 	<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN"
 	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
 # XHTML Doctype 1.0 Strict
 snippet docxs
+options word
 	<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
 	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 # XHTML Doctype 1.0 Transitional
 snippet docxt
+options word
 	<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
 	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 # XHTML Doctype 1.1
 snippet docx
+options word
 	<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
 	"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
 # Attributes
 snippet attr
+options word
 	${1:attribute}="${0:property}"
 snippet attr+
+options word
 	${1:attribute}="${2:property}" attr+
 snippet .
+options word
 	class="${1}"
 snippet #
+options word
 	id="${1}"
 snippet alt
+options word
 	alt="${1}"
 snippet charset
+options word
 	charset="${1:utf-8}"
 snippet data
+options word
 	data-${1}="${2:$1}"
 snippet for
+options word
 	for="${1}"
 snippet height
+options word
 	height="${1}"
 snippet href
+options word
 	href="${1:#}"
 snippet lang
+options word
 	lang="${1:en}"
 snippet media
+options word
 	media="${1}"
 snippet name
+options word
 	name="${1}"
 snippet rel
+options word
 	rel="${1}"
 snippet scope
+options word
 	scope="${1:row}"
 snippet src
+options word
 	src="${1}"
 snippet title=
+options word
 	title="${1}"
 snippet type
+options word
 	type="${1}"
 snippet value
+options word
 	value="${1}"
 snippet width
+options word
 	width="${1}"
 # Elements
 snippet a
+options word
 	<a href="${1:#}">${0:$1}</a>
 snippet a.
+options word
 	<a class="${1}" href="${2:#}">${0:$1}</a>
 snippet a#
+options word
 	<a id="${1}" href="${2:#}">${0:$1}</a>
 snippet a:ext
+options word
 	<a href="http://${1:example.com}">${0:$1}</a>
 snippet a:mail
+options word
 	<a href="mailto:${1:joe@example.com}?subject=${2:feedback}">${0:email me}</a>
 snippet ac
+options word
 	<a href="`@+`">${0:`@+`}</a>
 snippet abbr
+options word
 	<abbr title="${1}">${0}</abbr>
 snippet address
+options word
 	<address>
 		${0}
 	</address>
 snippet area
+options word
 	<area shape="${1:rect}" coords="${2}" href="${3}" alt="${0}" />
 snippet area+
+options word
 	<area shape="${1:rect}" coords="${2}" href="${3}" alt="${4}" />
 	area+
 snippet area:c
+options word
 	<area shape="circle" coords="${1}" href="${2}" alt="${0}" />
 snippet area:d
+options word
 	<area shape="default" coords="${1}" href="${2}" alt="${0}" />
 snippet area:p
+options word
 	<area shape="poly" coords="${1}" href="${2}" alt="${0}" />
 snippet area:r
+options word
 	<area shape="rect" coords="${1}" href="${2}" alt="${0}" />
 snippet article
+options word
 	<article>
 		${0}
 	</article>
 snippet article.
+options word
 	<article class="${1}">
 		${0}
 	</article>
 snippet article#
+options word
 	<article id="${1}">
 		${0}
 	</article>
 snippet aside
+options word
 	<aside>
 		${0}
 	</aside>
 snippet aside.
+options word
 	<aside class="${1}">
 		${0}
 	</aside>
 snippet aside#
+options word
 	<aside id="${1}">
 		${0}
 	</aside>
 snippet audio
+options word
 	<audio src="${1}>${0}</audio>
 snippet b
+options word
 	<b>${0}</b>
 snippet base
+options word
 	<base href="${1}" target="${0}" />
 snippet bdi
+options word
 	<bdi>${0}</bdo>
 snippet bdo
+options word
 	<bdo dir="${1}">${0}</bdo>
 snippet bdo:l
+options word
 	<bdo dir="ltr">${0}</bdo>
 snippet bdo:r
+options word
 	<bdo dir="rtl">${0}</bdo>
 snippet blockquote
+options word
 	<blockquote>
 		${0}
 	</blockquote>
 snippet body
+options word
 	<body>
 		${0}
 	</body>
 snippet br
+options word
 	<br />
 snippet button
+options word
 	<button type="${1:submit}">${0}</button>
 snippet button.
+options word
 	<button class="${1:button}" type="${2:submit}">${0}</button>
 snippet button#
+options word
 	<button id="${1}" type="${2:submit}">${0}</button>
 snippet button:s
+options word
 	<button type="submit">${0}</button>
 snippet button:r
+options word
 	<button type="reset">${0}</button>
 snippet canvas
+options word
 	<canvas>
 		${0}
 	</canvas>
 snippet caption
+options word
 	<caption>${0}</caption>
 snippet cite
+options word
 	<cite>${0}</cite>
 snippet code
+options word
 	<code>${0}</code>
 snippet col
+options word
 	<col />
 snippet col+
+options word
 	<col />
 	col+
 snippet colgroup
+options word
 	<colgroup>
 		${0}
 	</colgroup>
 snippet colgroup+
+options word
 	<colgroup>
 		<col />
 		col+${0}
 	</colgroup>
 snippet command
+options word
 	<command type="command" label="${1}" icon="${0}" />
 snippet command:c
+options word
 	<command type="checkbox" label="${1}" icon="${0}" />
 snippet command:r
+options word
 	<command type="radio" radiogroup="${1}" label="${2}" icon="${0}" />
 snippet datagrid
+options word
 	<datagrid>
 		${0}
 	</datagrid>
 snippet datalist
+options word
 	<datalist>
 		${0}
 	</datalist>
 snippet datatemplate
+options word
 	<datatemplate>
 		${0}
 	</datatemplate>
 snippet dd
+options word
 	<dd>${0}</dd>
 snippet dd.
+options word
 	<dd class="${1}">${0}</dd>
 snippet dd#
+options word
 	<dd id="${1}">${0}</dd>
 snippet del
+options word
 	<del>${0}</del>
 snippet details
+options word
 	<details>${0}</details>
 snippet dfn
+options word
 	<dfn>${0}</dfn>
 snippet dialog
+options word
 	<dialog>
 		${0}
 	</dialog>
 snippet div
+options word
 	<div>
 		${0}
 	</div>
 snippet div.
+options word
 	<div class="${1}">
 		${0}
 	</div>
 snippet div#
+options word
 	<div id="${1}">
 		${0}
 	</div>
 snippet dl
+options word
 	<dl>
 		${0}
 	</dl>
 snippet dl.
+options word
 	<dl class="${1}">
 		${0}
 	</dl>
 snippet dl#
+options word
 	<dl id="${1}">
 		${0}
 	</dl>
 snippet dl+
+options word
 	<dl>
 		<dt>${1}</dt>
 		<dd>${2}</dd>
 		dt+${0}
 	</dl>
 snippet dt
+options word
 	<dt>${0}</dt>
 snippet dt.
+options word
 	<dt class="${1}">${0}</dt>
 snippet dt#
+options word
 	<dt id="${1}">${0}</dt>
 snippet dt+
+options word
 	<dt>${1}</dt>
 	<dd>${2}</dd>
 	dt+${0}
 snippet em
+options word
 	<em>${0}</em>
 snippet embed
+options word
 	<embed src=${1} type="${0} />
 snippet fieldset
+options word
 	<fieldset>
 		${0}
 	</fieldset>
 snippet fieldset.
+options word
 	<fieldset class="${1}">
 		${0}
 	</fieldset>
 snippet fieldset#
+options word
 	<fieldset id="${1}">
 		${0}
 	</fieldset>
 snippet fieldset+
+options word
 	<fieldset>
 		<legend><span>${1}</span></legend>
 		${2}
 	</fieldset>
 	fieldset+${0}
 snippet figcaption
+options word
 	<figcaption>${0}</figcaption>
 snippet figure
+options word
 	<figure>${0}</figure>
 snippet footer
+options word
 	<footer>
 		${0}
 	</footer>
 snippet footer.
+options word
 	<footer class="${1}">
 		${0}
 	</footer>
 snippet footer#
+options word
 	<footer id="${1}">
 		${0}
 	</footer>
 snippet form
+options word
 	<form action="${1}" method="${2:post}">
 		${0}
 	</form>
 snippet form.
+options word
 	<form class="${1}" action="${2}" method="${3:post}">
 		${0}
 	</form>
 snippet form#
+options word
 	<form id="${1}" action="${2}" method="${3:post}">
 		${0}
 	</form>
 snippet h1
+options word
 	<h1>${0}</h1>
 snippet h1.
+options word
 	<h1 class="${1}">${0}</h1>
 snippet h1#
+options word
 	<h1 id="${1}">${0}</h1>
 snippet h2
+options word
 	<h2>${0}</h2>
 snippet h2.
+options word
 	<h2 class="${1}">${0}</h2>
 snippet h2#
+options word
 	<h2 id="${1}">${0}</h2>
 snippet h3
+options word
 	<h3>${0}</h3>
 snippet h3.
+options word
 	<h3 class="${1}">${0}</h3>
 snippet h3#
+options word
 	<h3 id="${1}">${0}</h3>
 snippet h4
+options word
 	<h4>${0}</h4>
 snippet h4.
+options word
 	<h4 class="${1}">${0}</h4>
 snippet h4#
+options word
 	<h4 id="${1}">${0}</h4>
 snippet h5
+options word
 	<h5>${0}</h5>
 snippet h5.
+options word
 	<h5 class="${1}">${0}</h5>
 snippet h5#
+options word
 	<h5 id="${1}">${0}</h5>
 snippet h6
+options word
 	<h6>${0}</h6>
 snippet h6.
+options word
 	<h6 class="${1}">${0}</h6>
 snippet h6#
+options word
 	<h6 id="${1}">${0}</h6>
 snippet head
+options word
 	<head>
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 
@@ -421,36 +572,45 @@ snippet head
 		${0}
 	</head>
 snippet header
+options word
 	<header>
 		${0}
 	</header>
 snippet header.
+options word
 	<header class="${1}">
 		${0}
 	</header>
 snippet header#
+options word
 	<header id="${1}">
 		${0}
 	</header>
 snippet hgroup
+options word
 	<hgroup>
 		${0}
 	</hgroup>
 snippet hgroup.
+options word
 	<hgroup class="${1}>
 		${0}
 	</hgroup>
 snippet hr
+options word
 	<hr />
 snippet html
+options word
 	<html>
 	${0}
 	</html>
 snippet xhtml
+options word
 	<html xmlns="http://www.w3.org/1999/xhtml">
 	${0}
 	</html>
 snippet html5
+options word
 	<!DOCTYPE html>
 	<html>
 		<head>
@@ -464,173 +624,242 @@ snippet html5
 		</body>
 	</html>
 snippet i
+options word
 	<i>${0}</i>
 snippet iframe
+options word
 	<iframe src="${1}" frameborder="0"></iframe>
 snippet iframe.
+options word
 	<iframe class="${1}" src="${2}" frameborder="0"></iframe>
 snippet iframe#
+options word
 	<iframe id="${1}" src="${2}" frameborder="0"></iframe>
 snippet img
+options word
 	<img src="${1}" alt="${2}" />
 snippet img.
+options word
 	<img class="${1}" src="${2}" alt="${3}" />
 snippet img#
+options word
 	<img id="${1}" src="${2}" alt="${3}" />
 snippet input
+options word
 	<input type="${1:text/submit/hidden/button/image}" name="${2}" id="${3:$2}" value="${4}" />
 snippet input.
+options word
 	<input class="${1}" type="${2:text/submit/hidden/button/image}" name="${3}" id="${4:$3}" value="${5}" />
 snippet input:text
+options word
 	<input type="text" name="${1}" id="${2:$1}" value="${3}" />
 snippet input:submit
+options word
 	<input type="submit" name="${1}" id="${2:$1}" value="${3}" />
 snippet input:hidden
+options word
 	<input type="hidden" name="${1}" id="${2:$1}" value="${3}" />
 snippet input:button
+options word
 	<input type="button" name="${1}" id="${2:$1}" value="${3}" />
 snippet input:image
+options word
 	<input type="image" name="${1}" id="${2:$1}" src="${3}" alt="${4}" />
 snippet input:checkbox
+options word
 	<input type="checkbox" name="${1}" id="${2:$1}" />
 snippet input:radio
+options word
 	<input type="radio" name="${1}" id="${2:$1}" />
 snippet input:color
+options word
 	<input type="color" name="${1}" id="${2:$1}" value="${3}" />
 snippet input:date
+options word
 	<input type="date" name="${1}" id="${2:$1}" value="${3}" />
 snippet input:datetime
+options word
 	<input type="datetime" name="${1}" id="${2:$1}" value="${3}" />
 snippet input:datetime-local
+options word
 	<input type="datetime-local" name="${1}" id="${2:$1}" value="${3}" />
 snippet input:email
+options word
 	<input type="email" name="${1}" id="${2:$1}" value="${3}" />
 snippet input:file
+options word
 	<input type="file" name="${1}" id="${2:$1}" value="${3}" />
 snippet input:month
+options word
 	<input type="month" name="${1}" id="${2:$1}" value="${3}" />
 snippet input:number
+options word
 	<input type="number" name="${1}" id="${2:$1}" value="${3}" />
 snippet input:password
+options word
 	<input type="password" name="${1}" id="${2:$1}" value="${3}" />
 snippet input:range
+options word
 	<input type="range" name="${1}" id="${2:$1}" value="${3}" />
 snippet input:reset
+options word
 	<input type="reset" name="${1}" id="${2:$1}" value="${3}" />
 snippet input:search
+options word
 	<input type="search" name="${1}" id="${2:$1}" value="${3}" />
 snippet input:time
+options word
 	<input type="time" name="${1}" id="${2:$1}" value="${3}" />
 snippet input:url
+options word
 	<input type="url" name="${1}" id="${2:$1}" value="${3}" />
 snippet input:week
+options word
 	<input type="week" name="${1}" id="${2:$1}" value="${3}" />
 snippet ins
+options word
 	<ins>${0}</ins>
 snippet kbd
+options word
 	<kbd>${0}</kbd>
 snippet keygen
+options word
 	<keygen>${0}</keygen>
 snippet label
+options word
 	<label for="${0:$1}">${1}</label>
 snippet label:i
+options word
 	<label for="${2:$1}">${1}</label>
 	<input type="${3:text/submit/hidden/button}" name="${4:$2}" id="${5:$2}" value="${6}" />
 snippet label:s
+options word
 	<label for="${2:$1}">${1}</label>
 	<select name="${3:$2}" id="${4:$2}">
 		<option value="${5}">${0:$5}</option>
 	</select>
 snippet legend
+options word
 	<legend>${0}</legend>
 snippet legend+
+options word
 	<legend><span>${0}</span></legend>
 snippet li
+options word
 	<li>${0}</li>
 snippet li.
+options word
 	<li class="${1}">${0}</li>
 snippet li+
+options word
 	<li>${1}</li>
 	li+
 snippet lia
+options word
 	<li><a href="${0:#}">${1}</a></li>
 snippet lia+
+options word
 	<li><a href="${2:#}">${1}</a></li>
 	lia+
 snippet link
+options word
 	<link rel="${1}" href="${2}" title="${3}" type="${4}" />
 snippet link:atom
+options word
 	<link rel="alternate" href="${1:atom.xml}" title="Atom" type="application/atom+xml" />
 snippet link:css
+options word
 	<link rel="stylesheet" href="${1:style.css}" type="text/css" media="${2:all}" />
 snippet link:favicon
+options word
 	<link rel="shortcut icon" href="${1:favicon.ico}" type="image/x-icon" />
 snippet link:rss
+options word
 	<link rel="alternate" href="${1:rss.xml}" title="RSS" type="application/atom+xml" />
 snippet link:touch
+options word
 	<link rel="apple-touch-icon" href="${1:favicon.png}" />
 snippet map
+options word
 	<map name="${1}">
 		${0}
 	</map>
 snippet map.
+options word
 	<map class="${1}" name="${2}">
 		${0}
 	</map>
 snippet map#
+options word
 	<map name="${1}" id="${2:$1}>
 		${0}
 	</map>
 snippet map+
+options word
 	<map name="${1}">
 		<area shape="${2}" coords="${3}" href="${4}" alt="${5}" />${6}
 	</map>
 snippet mark
+options word
 	<mark>${0}</mark>
 snippet menu
+options word
 	<menu>
 		${0}
 	</menu>
 snippet menu:c
+options word
 	<menu type="context">
 		${0}
 	</menu>
 snippet menu:t
+options word
 	<menu type="toolbar">
 		${0}
 	</menu>
 snippet meta
+options word
 	<meta http-equiv="${1}" content="${2}" />
 snippet meta:compat
+options word
 	<meta http-equiv="X-UA-Compatible" content="IE=${1:7,8,edge}" />
 snippet meta:refresh
+options word
 	<meta http-equiv="refresh" content="text/html;charset=UTF-8" />
 snippet meta:utf
+options word
 	<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
 snippet meter
+options word
 	<meter>${0}</meter>
 snippet nav
+options word
 	<nav>
 		${0}
 	</nav>
 snippet nav.
+options word
 	<nav class="${1}">
 		${0}
 	</nav>
 snippet nav#
+options word
 	<nav id="${1}">
 		${0}
 	</nav>
 snippet noscript
+options word
 	<noscript>
 		${0}
 	</noscript>
 snippet object
+options word
 	<object data="${1}" type="${2}">
 		${3}
 	</object>
 # Embed QT Movie
 snippet movie
+options word
 	<object width="$2" height="$3" classid="clsid:02BF25D5-8C17-4B23-BC80-D3488ABDDC6B"
 	 codebase="http://www.apple.com/qtactivex/qtplugin.cab">
 		<param name="src" value="$1" />
@@ -643,196 +872,260 @@ snippet movie
 			pluginspage="http://www.apple.com/quicktime/download/" />
 	</object>
 snippet ol
+options word
 	<ol>
 		${0}
 	</ol>
 snippet ol.
+options word
 	<ol class="${1}>
 		${0}
 	</ol>
 snippet ol#
+options word
 	<ol id="${1}>
 		${0}
 	</ol>
 snippet ol+
+options word
 	<ol>
 		<li>${1}</li>
 		li+${0}
 	</ol>
 snippet opt
+options word
 	<option value="${1}">${0:$1}</option>
 snippet opt+
+options word
 	<option value="${1}">${2:$1}</option>
 	opt+${0}
 snippet optt
+options word
 	<option>${0}</option>
 snippet optgroup
+options word
 	<optgroup>
 		<option value="${1}">${2:$1}</option>
 		opt+${0}
 	</optgroup>
 snippet output
+options word
 	<output>${0}</output>
 snippet p
+options word
 	<p>${0}</p>
 snippet param
+options word
 	<param name="${1}" value="${2}" />
 snippet pre
+options word
 	<pre>
 		${0}
 	</pre>
 snippet progress
+options word
 	<progress>${0}</progress>
 snippet q
+options word
 	<q>${0}</q>
 snippet rp
+options word
 	<rp>${0}</rp>
 snippet rt
+options word
 	<rt>${0}</rt>
 snippet ruby
+options word
 	<ruby>
 		<rp><rt>${0}</rt></rp>
 	</ruby>
 snippet s
+options word
 	<s>${0}</s>
 snippet samp
+options word
 	<samp>
 		${0}
 	</samp>
 snippet script
+options word
 	<script type="text/javascript" charset="utf-8">
 		${0}
 	</script>
 snippet scriptsrc
+options word
 	<script src="${0}.js" type="text/javascript" charset="utf-8"></script>
 snippet section
+options word
 	<section>
 		${0}
 	</section>
 snippet section.
+options word
 	<section class="${1}">
 		${0}
 	</section>
 snippet section#
+options word
 	<section id="${1}">
 		${0}
 	</section>
 snippet select
+options word
 	<select name="${1}" id="${2:$1}">
 		${0}
 	</select>
 snippet select.
+options word
 	<select name="${1}" id="${2:$1}" class="${3}>
 		${0}
 	</select>
 snippet select+
+options word
 	<select name="${1}" id="${2:$1}">
 		<option value="${3}">${4:$3}</option>
 		opt+${0}
 	</select>
 snippet small
+options word
 	<small>${0}</small>
 snippet source
+options word
 	<source src="${1}" type="${2}" media="${0}" />
 snippet span
+options word
 	<span>${0}</span>
 snippet span.
+options word
 	<span class="${1}">${0}</span>
 snippet span#
+options word
 	<span id="${1}">${0}</span>
 snippet strong
+options word
 	<strong>${0}</strong>
 snippet style
+options word
 	<style type="text/css" media="${1:all}">
 		${0}
 	</style>
 snippet sub
+options word
 	<sub>${0}</sub>
 snippet summary
+options word
 	<summary>
 		${0}
 	</summary>
 snippet sup
+options word
 	<sup>${0}</sup>
 snippet table
+options word
 	<table>
 		${0}
 	</table>
 snippet table.
+options word
 	<table class="${1}">
 		${0}
 	</table>
 snippet table#
+options word
 	<table id="${1}">
 		${0}
 	</table>
 snippet tbody
+options word
 	<tbody>
 		${0}
 	</tbody>
 snippet td
+options word
 	<td>${0}</td>
 snippet td.
+options word
 	<td class="${1}">${0}</td>
 snippet td#
+options word
 	<td id="${1}">${0}</td>
 snippet td+
+options word
 	<td>${1}</td>
 	td+${0}
 snippet textarea
+options word
 	<textarea name="${1}" id=${2:$1} rows="${3:8}" cols="${4:40}">${5}</textarea>
 snippet tfoot
+options word
 	<tfoot>
 		${0}
 	</tfoot>
 snippet th
+options word
 	<th>${0}</th>
 snippet th.
+options word
 	<th class="${1}">${0}</th>
 snippet th#
+options word
 	<th id="${1}">${0}</th>
 snippet th+
+options word
 	<th>${1}</th>
 	th+${0}
 snippet thead
+options word
 	<thead>
 		${0}
 	</thead>
 snippet time
+options word
 	<time datetime="${1}" pubdate="${2:$1}">${0:$1}</time>
 snippet title
+options word
 	<title>${0:`substitute(vim_snippets#Filename('', 'Page Title'), '^.', '\u&', '')`}</title>
 snippet tr
+options word
 	<tr>
 		${0}
 	</tr>
 snippet tr+
+options word
 	<tr>
 		<td>${1}</td>
 		td+${0}
 	</tr>
 snippet track
+options word
 	<track src="${1}" srclang="${2}" label="${3}" default="${4:default}>${5}</track>
 snippet ul
+options word
 	<ul>
 		${0}
 	</ul>
 snippet ul.
+options word
 	<ul class="${1}">
 		${0}
 	</ul>
 snippet ul#
+options word
 	<ul id="${1}">
 		${0}
 	</ul>
 snippet ul+
+options word
 	<ul>
 		<li>${1}</li>
 		li+${0}
 	</ul>
 snippet var
+options word
 	<var>${0}</var>
 snippet video
+options word
 	<video src="${1} height="${2}" width="${3}" preload="${5:none}" autoplay="${6:autoplay}>${7}</video>
 snippet wbr
+options word
 	<wbr />
